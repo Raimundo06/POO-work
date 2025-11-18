@@ -1,0 +1,20 @@
+biblioteca/
+│
+├── modelos/
+│   ├── __init__.py
+│   ├── publicacao.py
+│   ├── livro.py
+│   ├── revista.py
+│   └── anotacao.py
+│
+├── core/
+│   ├── __init__.py
+│   └── colecao.py
+│
+├── dados/
+│   ├── __init__.py
+│   └── persistencia.py
+│
+├── settings.json
+├── README.md
+└── main.py
