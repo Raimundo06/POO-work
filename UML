@@ -1,0 +1,9 @@
+UML
+| Classe        | Atributos                                                                                      | Métodos Principais                                  |
+|--------------|--------------------------------------------------------------------------------------------------|------------------------------------------------------|
+| Publicacao   | titulo, autor, ano, genero, num_paginas, status, data_inclusao, avaliacao, anotacoes            | alterar_status(), registrar_avaliacao(), __str__(), __repr__(), __lt__(), __eq__() |
+| Livro        | (Herda de Publicacao — sem novos atributos)                                                     | __str__() (sobrescrito)                              |
+| Revista      | edicao (além dos atributos herdados de Publicacao)                                              | __str__() (sobrescrito)                              |
+| Anotacao     | texto, data, trecho                                                                             | __str__()                                           |
+| Colecao      | publicacoes                                                                                     | adicionar_publicacao(), remover_publicacao(), buscar_por_titulo(), buscar_por_autor(), buscar_por_genero(), buscar_por_status(), gerar_relatorio() |
+| Persistência | (Funções — não é classe)                                                                        | salvar_publicacoes(), carregar_publicacoes()         |
