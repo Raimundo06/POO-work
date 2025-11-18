@@ -7,7 +7,7 @@ O objetivo é modelar um sistema para gerenciamento de uma biblioteca pessoal di
 
 ---
 
-## 🎯 Objetivo do Projeto
+##  Objetivo do Projeto
 Desenvolver um sistema capaz de gerenciar livros e revistas digitais, permitindo:
 
 - Cadastro e organização de publicações  
@@ -21,7 +21,7 @@ Nesta primeira etapa, o foco está **na modelagem do domínio e estruturação i
 
 ---
 
-## 📁 Estrutura Inicial das Classes
+##  Estrutura Inicial das Classes
 
 A estrutura de diretórios definida para o projeto:
 
