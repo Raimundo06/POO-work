@@ -20,8 +20,3 @@ Desenvolver um sistema capaz de gerenciar livros e revistas digitais, permitindo
 Nesta primeira etapa, o foco está **na modelagem do domínio e estruturação inicial do código**.
 
 ---
-
-##  Estrutura Inicial das Classes
-
-A estrutura de diretórios definida para o projeto:
-
