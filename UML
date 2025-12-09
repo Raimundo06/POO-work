@@ -1,8 +1,73 @@
-| Classe        | Atributos                                                                                      | Métodos Principais                                                  |
-|---------------|--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| Publicacao    | titulo, autor, ano, genero, num_paginas, status, data_inclusao, avaliacao, anotacoes            | alterar_status(), registrar_avaliacao(), __str__(), __repr__(), __lt__(), __eq__() |
-| Livro         | (Herda de Publicacao)                                                                           | __str__() (sobrescrito)                                             |
-| Revista       | edicao (herdado + atributo próprio)                                                             | __str__() (sobrescrito)                                             |
-| Anotacao      | texto, data, trecho                                                                             | __str__()                                                           |
-| Colecao       | publicacoes (lista)                                                                             | adicionar_publicacao(), remover_publicacao(), buscar_por_titulo(), buscar_por_autor(), buscar_por_genero(), buscar_por_status(), gerar_relatorio() |
-| Persistencia  | (Funções de módulo)                                                                             | salvar_publicacoes(), carregar_publicacoes()                        |
+
+
+class Publicacao {
+  - _titulo: str
+  - _autor: str
+  - _ano: int
+  - _genero: str
+  - _num_paginas: int
+  - _status: str
+  - _data_inclusao: date
+  - _data_inicio: date?
+  - _data_termino: date?
+  - _avaliacao: float?
+  - _anotacoes: List<Anotacao>
+  + __init__(titulo, autor, ano, genero, num_paginas)
+  + titulo(): str
+  + autor(): str
+  + ano(): int
+  + genero(): str
+  + num_paginas(): int
+  + status(): str
+  + iniciar_leitura()
+  + concluir_leitura()
+  + alterar_status(novo_status)
+  + registrar_avaliacao(nota)
+  + adicionar_anotacao(anotacao)
+  + __str__(): str
+}
+
+class Livro {
+  + __str__(): str
+}
+
+class Revista {
+  - _edicao: int
+  + edicao(): int
+  + __str__(): str
+}
+
+class Anotacao {
+  - _texto: str
+  - _trecho: str?
+  - _data: date
+  + __init__(texto, trecho=None)
+  + texto(): str
+  + trecho(): str?
+}
+
+class Colecao {
+  - _publicacoes: List<Publicacao>
+  + adicionar_publicacao(pub)
+  + remover_publicacao(titulo)
+  + buscar_por_titulo(termo)
+  + buscar_por_autor(autor)
+  + buscar_por_genero(genero)
+  + buscar_por_status(status)
+  + listar_todas()
+}
+
+class RelatorioModule {
+  + gerar_relatorio(publicacoes)
+}
+
+' Herança
+Livro --|> Publicacao
+Revista --|> Publicacao
+
+' Associações
+Colecao "1" o-- "*" Publicacao : contém
+Publicacao "1" o-- "*" Anotacao : tem
+RelatorioModule ..> Publicacao : usa
+
+@enduml
