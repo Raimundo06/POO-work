@@ -1,4 +1,4 @@
-istema de Gerenciamento de Biblioteca
+Sistema de Gerenciamento de Biblioteca
 Pessoal
 Trabalho de Programação Orientada a Objetos
 Universidade Federal do Cariri (UFCA)
