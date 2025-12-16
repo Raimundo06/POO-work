@@ -17,57 +17,153 @@ após o encerramento do programa, por meio de persistência em arquivo JSON.
 O projeto foi desenvolvido com foco em organização, reutilização de código, separação de
 responsabilidades e aplicação correta dos princípios de POO, conforme os critérios acadêmicos da
 
-Objetivos Específicos
-Aplicar os conceitos de classes e objetos
-Utilizar herança para evitar duplicação de código
-Implementar encapsulamento e abstração
-Trabalhar com composição entre classes
-Implementar persistência de dados utilizando JSON
-Desenvolver uma interface de interação via menu em terminal
+# 📚 Sistema de Gerenciamento de Biblioteca Pessoal
 
-Descrição das Principais Classes
- Publicacao
-Classe base que representa uma publicação genérica.
-Atributos principais: - titulo - autor - ano - genero - num_paginas - status - avaliacao - anotacoes
-Responsabilidade: Centralizar atributos e comportamentos comuns a livros e revistas.
- Livro
-Classe que herda de Publicacao .
-Responsabilidade: Representar livros sem adicionar atributos extras, aproveitando totalmente a
-herança.
- Revista
-Classe que herda de Publicacao .
-•
-•
-•
-•
-•
-•
-2
-Atributo adicional: - edicao
-Responsabilidade: Representar revistas, estendendo a classe base com informações específicas.
- Anotacao
-Classe responsável por armazenar anotações feitas pelo usuário durante a leitura.
-Atributos: - texto - trecho - data
- Colecao
-Classe responsável por gerenciar o conjunto de publicações.
-Funções principais: - Adicionar publicações - Listar publicações - Buscar por título - Salvar dados
- Persistencia
-Módulo responsável por salvar e carregar os dados da aplicação em um arquivo JSON.
-Responsabilidade: Garantir que os dados permaneçam disponíveis mesmo após o encerramento do
-programa.
- Persistência de Dados
-O sistema utiliza um arquivo dados.json para armazenar todas as informações das publicações.
-O arquivo é criado automaticamente ao salvar os dados
-Os dados são carregados automaticamente ao iniciar o sistema
-O formato JSON foi escolhido por ser simples, legível e amplamente utilizado
- Funcionamento do Menu
-O usuário interage com o sistema através de um menu em terminal, com as seguintes opções:
-Cadastrar Livro
-Cadastrar Revista
-Listar Publicações
-Iniciar Leitura
-Concluir Leitura
-Adicionar Anotação
-Avaliar Publicação
-Gerar Relatório
-Salvar e Sair
+> **Projeto de Programação Orientada a Objetos (POO)**
+> **Universidade Federal do Cariri (UFCA)**
+> **Curso:** Engenharia de Software *(ou Engenharia da Computação – ajuste se necessário)*
+> **Aluno:** Raimundo Sebastião
+> **Período:** 2025.2
+
+---
+
+## 🧠 Visão Geral
+
+Este projeto consiste em um **Sistema de Gerenciamento de Biblioteca Pessoal**, desenvolvido em **Python**, aplicando de forma prática os principais conceitos da **Programação Orientada a Objetos (POO)**.
+
+O sistema permite ao usuário cadastrar, consultar, atualizar e organizar publicações como **livros** e **revistas**, além de adicionar **anotações**, controlar **status de leitura** e gerar **relatórios**. Os dados são persistidos utilizando arquivos **JSON**, garantindo simplicidade e portabilidade.
+
+---
+
+## 🎯 Objetivos do Projeto
+
+* Aplicar conceitos fundamentais de POO na prática
+* Trabalhar com **herança**, **encapsulamento**, **polimorfismo** e **abstração**
+* Implementar **regras de negócio** claras
+* Realizar **persistência de dados em JSON**
+* Desenvolver um sistema modular e organizado
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* **Python 3.10+**
+* Manipulação de arquivos **JSON**
+* Programação Orientada a Objetos (POO)
+
+---
+
+## 🗂️ Estrutura do Projeto
+
+```
+📦 biblioteca-poo
+├── anotacao.py
+├── publicacao.py
+├── livro.py
+├── revista.py
+├── colecao.py
+├── persistencia.py
+├── relatorio.py
+├── main.py
+├── settings.json
+└── README.md
+```
+
+### 📄 Descrição dos Arquivos
+
+* **publicacao.py** → Classe base `Publicacao`
+* **livro.py** → Classe `Livro` (herda de `Publicacao`)
+* **revista.py** → Classe `Revista` (herda de `Publicacao`)
+* **anotacao.py** → Classe responsável por anotações do usuário
+* **colecao.py** → Gerencia a coleção de publicações
+* **persistencia.py** → Leitura e escrita de dados em JSON
+* **relatorio.py** → Geração de relatórios
+* **main.py** → Interface via terminal
+* **settings.json** → Configurações do sistema
+
+---
+
+## 🧩 Conceitos de POO Aplicados
+
+### 🔹 Abstração
+
+A classe `Publicacao` define atributos e comportamentos comuns a livros e revistas.
+
+### 🔹 Herança
+
+As classes `Livro` e `Revista` herdam de `Publicacao`, reutilizando e especializando comportamentos.
+
+### 🔹 Encapsulamento
+
+Os atributos são manipulados por métodos específicos, garantindo integridade dos dados.
+
+### 🔹 Polimorfismo
+
+Métodos como `__str__()` e regras específicas variam conforme o tipo da publicação.
+
+---
+
+## 📏 Regras de Negócio
+
+* Não é permitido cadastrar publicações sem título
+* O status da leitura deve ser válido (ex: *Não iniciado*, *Em andamento*, *Concluído*)
+* A avaliação deve estar dentro de um intervalo válido
+* Anotações não podem ser vazias
+
+---
+
+## ▶️ Como Executar o Projeto
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   ```
+
+2. Acesse a pasta do projeto:
+
+   ```bash
+   cd biblioteca-poo
+   ```
+
+3. Execute o sistema:
+
+   ```bash
+   python main.py
+   ```
+
+---
+
+## 📊 Funcionalidades
+
+* Cadastro de livros e revistas
+* Busca por título
+* Alteração de status de leitura
+* Registro de avaliações
+* Adição de anotações
+* Geração de relatórios
+* Persistência de dados em JSON
+
+---
+
+## 📌 Status do Projeto
+
+🚧 **Em desenvolvimento**
+Funcionalidades principais implementadas, com possibilidade de melhorias futuras.
+
+---
+
+## 📚 Considerações Finais
+
+Este projeto foi desenvolvido com fins **acadêmicos**, visando consolidar os conhecimentos adquiridos na disciplina de **Programação Orientada a Objetos**, utilizando boas práticas de organização, clareza e reutilização de código.
+
+---
+
+## ✍️ Autor
+
+**Raimundo Sebastião**
+Universidade Federal do Cariri – UFCA
+
+---
+
+⭐ *Se este projeto te ajudou, considere deixar uma estrela no repositório!*
