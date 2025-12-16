@@ -1,0 +1,18 @@
+biblioteca/
+│
+├── domain/
+│   ├── publicacao.py
+│   ├── livro.py
+│   ├── revista.py
+│   ├── anotacao.py
+│   └── colecao.py
+│
+├── repository/
+│   └── dados_json.py
+│
+├── cli/
+│   └── menu.py
+│
+├── settings.json
+├── main.py
+└── tests/
