@@ -1,0 +1,26 @@
+[
+    {
+        "tipo": "Livro",
+        "titulo": "A Casa Targaryen",
+        "autor": "Daenerys",
+        "ano": 2022,
+        "genero": "ação",
+        "num_paginas": 44,
+        "status": "Não iniciado",
+        "avaliacao": null,
+        "anotacoes": [],
+        "edicao": null
+    },
+    {
+        "tipo": "Livro",
+        "titulo": "O FIM DO MUNDO",
+        "autor": "CRISTIAN MERKS",
+        "ano": 2015,
+        "genero": "SUSPENSE",
+        "num_paginas": 210,
+        "status": "Não iniciado",
+        "avaliacao": null,
+        "anotacoes": [],
+        "edicao": null
+    }
+]
