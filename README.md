@@ -2,7 +2,7 @@ Sistema de Gerenciamento de Biblioteca
 Pessoal
 Trabalho de Programação Orientada a Objetos
 Universidade Federal do Cariri (UFCA)
-Curso: Engenharia de Software (ou Engenharia da Computação – ajuste conforme necessário)
+Curso: Engenharia de Software
 Disciplina: Programação Orientada a Objetos
 Aluno: Raimundo Sebastião
 
@@ -19,7 +19,7 @@ após o encerramento do programa, por meio de persistência em arquivo JSON.
 
 > **Projeto de Programação Orientada a Objetos (POO)**
 > **Universidade Federal do Cariri (UFCA)**
-> **Curso:** Engenharia de Software *(ou Engenharia da Computação – ajuste se necessário)*
+> **Curso:** Engenharia de Software
 > **Aluno:** Raimundo Sebastião
 > **Período:** 2025.2
 
@@ -36,12 +36,7 @@ O sistema permite ao usuário cadastrar, consultar, atualizar e organizar public
 ## 🎯 Objetivos do Projeto
 
 * Aplicar conceitos fundamentais de POO na prática
-* Trabalhar com **herança**, **encapsulamento**, **polimorfismo** e **abstração**
 * Implementar **regras de negócio** claras
-* Realizar **persistência de dados em JSON**
-* Desenvolver um sistema modular e organizado
-
----
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -95,9 +90,7 @@ As classes `Livro` e `Revista` herdam de `Publicacao`, reutilizando e especializ
 
 Os atributos são manipulados por métodos específicos, garantindo integridade dos dados.
 
-### 🔹 Polimorfismo
 
-Métodos como `__str__()` e regras específicas variam conforme o tipo da publicação.
 
 ---
 
@@ -144,24 +137,5 @@ Métodos como `__str__()` e regras específicas variam conforme o tipo da public
 
 ---
 
-## 📌 Status do Projeto
 
-🚧 **Em desenvolvimento**
-Funcionalidades principais implementadas, com possibilidade de melhorias futuras.
 
----
-
-## 📚 Considerações Finais
-
-Este projeto foi desenvolvido com fins **acadêmicos**, visando consolidar os conhecimentos adquiridos na disciplina de **Programação Orientada a Objetos**, utilizando boas práticas de organização, clareza e reutilização de código.
-
----
-
-## ✍️ Autor
-
-**Raimundo Sebastião**
-Universidade Federal do Cariri – UFCA
-
----
-
-⭐ *Se este projeto te ajudou, considere deixar uma estrela no repositório!*
