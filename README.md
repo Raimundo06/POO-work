@@ -14,8 +14,6 @@ implementado em Python, utilizando os principais conceitos de Programação Orie
 O sistema permite ao usuário cadastrar e gerenciar livros e revistas, controlar o status de leitura,
 registrar anotações, realizar avaliações e gerar relatórios, mantendo todos os dados salvos mesmo
 após o encerramento do programa, por meio de persistência em arquivo JSON.
-O projeto foi desenvolvido com foco em organização, reutilização de código, separação de
-responsabilidades e aplicação correta dos princípios de POO, conforme os critérios acadêmicos da
 
 # 📚 Sistema de Gerenciamento de Biblioteca Pessoal
 
