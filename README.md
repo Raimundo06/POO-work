@@ -114,13 +114,13 @@ Os atributos são manipulados por métodos específicos, garantindo integridade 
 2. Acesse a pasta do projeto:
 
    ```bash
-   cd biblioteca-poo
+   biblioteca_orojetof, domain
    ```
 
 3. Execute o sistema:
 
    ```bash
-   python main.py
+   main.py
    ```
 
 ---
