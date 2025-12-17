@@ -108,7 +108,7 @@ Os atributos são manipulados por métodos específicos, garantindo integridade 
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   https://github.com/Raimundo06/POO-work.git
    ```
 
 2. Acesse a pasta do projeto:
